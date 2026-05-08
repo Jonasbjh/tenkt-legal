@@ -1,127 +1,100 @@
-# Privacy Policy for Tenkt
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy — Tenkt</title>
+<style>
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 20px; margin-top: 32px; }
+  h3 { font-size: 16px; margin-top: 20px; }
+  ul { padding-left: 22px; }
+  .updated { color: #666; font-style: italic; }
+  code { background: #f4f4f4; padding: 1px 5px; border-radius: 3px; }
+</style>
+</head>
+<body>
 
-**Last updated: 4/5/2026
+<h1>Privacy Policy for Tenkt</h1>
+<p class="updated"><strong>Last updated: 5/8/2026</strong></p>
 
-This Privacy Policy describes how Tenkt ("we", "us", "the app") handles
-information when you use our iOS application. We are committed to keeping
-the app private by default — most features work entirely offline, and we
-do not run our own servers or analytics.
+<p>This policy describes how Tenkt handles information in its iOS application. Most features work entirely offline, and we do not run our own servers or analytics.</p>
 
-## 1. Information We Collect
+<h2>1. Information We Collect</h2>
 
-Tenkt itself collects very little. The data flows are:
+<h3>1.1 Locally on your device (never sent to us)</h3>
+<ul>
+  <li>Puzzle progress, completion times, streaks, and statistics</li>
+  <li>App preferences (theme, language, sound, haptics)</li>
+  <li>In-progress puzzles for resuming after crashes</li>
+  <li>In-app currency balance ("traces"), unlocked marks, and quest progress</li>
+</ul>
+<p>Data remains in iOS storage only and is deleted when the app is removed.</p>
 
-### 1.1 Locally on your device (never sent to us)
-- Your puzzle progress, completion times, streaks, and statistics
-- Your app preferences (theme, language, sound, haptics)
-- Your in-progress puzzles (so the app can resume after a crash or
-  restart)
+<h3>1.2 Anonymous global leaderboard (Apple iCloud / CloudKit)</h3>
+<p>Upon completing daily puzzle sets, the app transmits to Apple's CloudKit public database:</p>
+<ul>
+  <li>Anonymous identifier from your iCloud account</li>
+  <li>UTC date string of the puzzle (<code>seedID</code>)</li>
+  <li>Total completion time in seconds</li>
+</ul>
+<p>This data is used solely to compute and display the global leaderboard. Players see anonymized identifiers like "Player A3F4," not real names. Users can sign out of iCloud in iOS Settings to disable this feature.</p>
 
-This data lives in iOS storage on your device only. It is never uploaded
-to any server we control. If you delete the app, this data is gone.
+<h3>1.3 Advertising (Google AdMob)</h3>
+<p>AdMob may collect device advertising identifier (IDFA), ad performance data, and diagnostic information for ad delivery. The app shows three ad formats: banner ads, interstitial ads between sessions, and optional rewarded ads (which users actively choose to watch in exchange for in-app currency). All three follow the same AdMob data practices.</p>
+<p>Declining the App Tracking Transparency prompt results in non-personalized ads only. Users can purchase "Remove ads" or the "Pro Bundle" to disable all AdMob ads entirely.</p>
 
-### 1.2 Anonymous global leaderboard (Apple iCloud / CloudKit)
-When you complete a daily puzzle set, the app sends the following to
-Apple's CloudKit public database:
-- An anonymous identifier provided by your iCloud account
-  (`CKContainer.userRecordID` — we never see your Apple ID, name, or
-  email)
-- The UTC date string of the puzzle ("seedID")
-- Your total completion time in seconds
+<h3>1.4 Purchases (Apple StoreKit)</h3>
+<p>Apple processes the following in-app purchases through StoreKit:</p>
+<ul>
+  <li><strong>Remove ads</strong> (one-time, kr 29) — disables advertising</li>
+  <li><strong>Daily 2×</strong> (one-time, kr 19) — doubles daily trace earnings</li>
+  <li><strong>Pro Bundle</strong> (one-time, kr 39) — combines both above</li>
+  <li><strong>Trace bundles</strong> (consumable, kr 19 / 49 / 99) — purchase 500 / 1500 / 3500 in-app currency ("traces")</li>
+</ul>
+<p>The developer receives transaction records (product ID, purchase date, transaction ID) to verify purchases and unlock features. Payment details (credit card, Apple ID password) remain with Apple — the developer never sees them.</p>
 
-This data is used solely to compute and display the global leaderboard.
-We never link it to your name, email, or any other personal information.
-Other players see only an anonymized identifier (e.g. "Player A3F4"), not
-your real name.
+<h2>2. Information We Do NOT Collect</h2>
+<p>Tenkt does not:</p>
+<ul>
+  <li>Run proprietary servers or backend infrastructure</li>
+  <li>Use analytics services beyond AdMob</li>
+  <li>Collect names, emails, phone numbers, or contact details</li>
+  <li>Access cameras, microphones, contacts, or location data</li>
+  <li>Send marketing communications</li>
+  <li>Sell user data</li>
+</ul>
 
-CloudKit is operated by Apple under their own privacy terms. You can
-sign out of iCloud at any time in iOS Settings to stop this data flow,
-but the app will still work without leaderboard features.
+<h2>3. Push Notifications</h2>
+<p>If you enable notifications, Tenkt schedules local reminders on-device only — daily nudges, streak-protection alerts, and rank updates after a top-100 finish. Remote push notifications are not sent. Users can disable notifications in iOS Settings.</p>
 
-### 1.3 Advertising (Google AdMob)
-Tenkt is free and supported by ads from Google AdMob. AdMob may collect:
-- Your device's advertising identifier (IDFA), if you grant permission
-  via the App Tracking Transparency prompt
-- Standard advertising signals (ad views, clicks, ad performance)
-- Diagnostic data needed to deliver ads (device model, OS version,
-  approximate IP-based location, language)
+<h2>4. Children's Privacy</h2>
+<p>Tenkt does not knowingly collect personal information from children under 13. The app is rated 4+ with no chat features, user profiles, or inter-user communication. AdMob serves family-safe ads per Google's policies.</p>
 
-If you decline the App Tracking Transparency prompt, AdMob will only
-serve non-personalized ads.
+<h2>5. Your Rights (GDPR / CCPA)</h2>
+<p>Users in the EEA, UK, or California have rights to:</p>
+<ul>
+  <li><strong>Access:</strong> Request data held about them</li>
+  <li><strong>Deletion:</strong> Request leaderboard record removal via email</li>
+  <li><strong>Withdraw consent:</strong> Disable App Tracking Transparency in iOS Settings or purchase ad removal</li>
+</ul>
 
-You can permanently remove all ads with a one-time in-app purchase
-("Remove ads"). After this purchase, AdMob is fully disabled.
+<h2>6. Data Retention</h2>
+<ul>
+  <li>Local data: retained until app deletion</li>
+  <li>CloudKit leaderboard records: retained indefinitely for historical leaderboards; users can request deletion</li>
+  <li>AdMob data: retained per Google policies (typically 14 months for identified data)</li>
+</ul>
 
-For details on how Google handles this data, see Google's Privacy Policy
-at https://policies.google.com/privacy.
+<h2>7. Changes to This Policy</h2>
+<p>Updates will be reflected in the "Last updated" date. Significant changes appear in release notes.</p>
 
-### 1.4 Purchases (Apple StoreKit)
-If you make the "Remove ads" purchase, Apple processes the transaction
-through StoreKit. We receive a transaction record (product ID, purchase
-date, transaction ID) so we can verify your purchase and disable ads.
-We do not see your payment method, name, or address — Apple handles all
-billing.
+<h2>8. Contact</h2>
+<p>
+  <strong>Email:</strong> jonasbjh@gmail.com<br>
+  <strong>Developer:</strong> Jonas Haug<br>
+  <strong>Address:</strong> Konvallveien 20a, Drammen, Norway
+</p>
 
-## 2. Information We Do NOT Collect
-
-We want to be specific about what we do *not* do:
-- We do not run our own servers or backend
-- We do not use any analytics service (no Firebase Analytics, no Mixpanel,
-  no third-party tracking SDKs other than AdMob)
-- We do not collect your name, email address, phone number, or contact
-  information
-- We do not access your camera, microphone, contacts, or location
-- We do not send marketing emails or push marketing notifications
-- We do not sell your data to anyone
-
-## 3. Push Notifications
-
-Tenkt may send local notifications (a daily reminder at 06:00 if you
-enable it). These are scheduled entirely on your device — we have no
-push server and never send remote pushes. You can disable notifications
-at any time in iOS Settings.
-
-## 4. Children's Privacy
-
-Tenkt does not knowingly collect personal information from children
-under 13. The app is rated 4+ and contains no chat features, no user
-profiles, and no way for users to communicate with one another. The
-ads served by AdMob are subject to Google's family-safe ad policies.
-
-## 5. Your Rights (GDPR / CCPA)
-
-If you are in the European Economic Area, the United Kingdom, or
-California, you have the following rights regarding personal data
-processed about you:
-
-- **Access**: You can request a copy of any data we hold about you. In
-  practice, we hold no personal data — only an anonymous identifier
-  tied to your iCloud account.
-- **Deletion**: You can delete your leaderboard records by emailing us
-  at [SUPPORT EMAIL]. Provide the approximate dates of your submissions
-  so we can locate them.
-- **Withdraw consent for tracking**: You can disable App Tracking
-  Transparency at any time in iOS Settings → Privacy & Security →
-  Tracking, or remove all ads via the in-app "Remove ads" purchase.
-
-## 6. Data Retention
-
-- Local data: stays on your device until you delete the app
-- CloudKit leaderboard records: retained indefinitely to support
-  historical leaderboards. You can request deletion (see Section 5).
-- AdMob data: retained per Google's policies (typically 14 months for
-  identified data)
-
-## 7. Changes to This Policy
-
-We may update this policy as the app evolves. The "Last updated" date
-at the top will reflect any changes. Significant changes will be
-announced in the app's release notes.
-
-## 8. Contact
-
-For privacy questions or to exercise your rights, contact us at:
-
-**Email:** jonasbjh@gmail.com
-**Developer:** Jonas Haug
-**Address:** Konvallveien 20a, Drammen
+</body>
+</html>
